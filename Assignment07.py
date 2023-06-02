@@ -5,7 +5,11 @@
 # Changelog : (Who When What)
 # Rohini N, 1st June,2023,Created Script
 # .............................
+import pickle
+import copy
 
+debutAlbums = [{'band': 'Led Zeppelin', 'debut': 'Led Zeppelin'},
+               {'band': 'U2', 'debut': 'Boy'}]
 # pickling an object
 pickling = open("debuts.dat", "wb")  # open a binary file for writing
 pickle.dump(debutAlbums, pickling)  # serialization i.e. pickling
